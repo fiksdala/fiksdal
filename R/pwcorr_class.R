@@ -1,0 +1,11 @@
+setClass("pwcorr_class", representation("list"))
+setMethod("show", "pwcorr_class", function(object) {
+    cat("\n")
+    cat("|-Cell Contents-|\n")
+    cat("|       r       |\n")
+    cat("|       p       |\n")
+    cat("|       n       |\n")
+    cat("|---------------|\n")
+    cat("\n")
+    prmatrix(object$output.c, quote=FALSE)
+})
