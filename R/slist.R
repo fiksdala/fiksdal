@@ -8,5 +8,5 @@
 #' slist()
 
 slist <- function(x) {
-  strsplit(x, " ")[[1]]
+  strsplit(x, "\\s+")[[1]]
 }
