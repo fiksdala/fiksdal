@@ -1,10 +1,10 @@
 #' varcontain
 #'
 #' This function returns any variable names in a given data set that contain
-#' the a provided string. The
+#' the a provided string.
 #' @param df A dataframe
 #' @param x A string that the returned variables in the dataframe will contain
-#' @ignorecase Ignore case of the string? Default is TRUE
+#' @param ignorecase Ignore case of the string? Default is TRUE
 #' @keywords variable names
 #' @export
 #' @examples
