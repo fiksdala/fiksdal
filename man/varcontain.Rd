@@ -10,10 +10,12 @@ varcontain(df, x, ignorecase = TRUE)
 \item{df}{A dataframe}
 
 \item{x}{A string that the returned variables in the dataframe will contain}
+
+\item{ignorecase}{Ignore case of the string? Default is TRUE}
 }
 \description{
 This function returns any variable names in a given data set that contain
-the a provided string. The
+the a provided string.
 }
 \examples{
 tdf <- data.frame(x=4,t=6,e=2,b=4,yep=9,Nope=10,cort1=3,cort4=5,Cort_55=9)
