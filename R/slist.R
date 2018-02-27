@@ -4,9 +4,9 @@
 #' @param x A character vector
 #' @keywords character vector, split
 #' @export
-#' @examples 
+#' @examples
 #' slist()
 
 slist <- function(x) {
-  strsplit(x, " ")[[1]]
+  strsplit(x, "\\s+")[[1]]
 }
