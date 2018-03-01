@@ -4,16 +4,21 @@
 \alias{nmiss}
 \title{nmiss}
 \usage{
-nmiss(x)
+nmiss(df, vars)
 }
 \arguments{
-\item{x}{Individual observation (produced by idmiss)}
+\item{df}{Dataframe that has the scale items}
+
+\item{vars}{Character list (c()) indicating names of individual scale items.}
 }
 \description{
-This simple function outputs the number of missing scale items for each observation summarized by idmiss.
+This function outputs the number of missing items for a specified list of
+variables.
 }
 \examples{
-n()
+nmiss()
 }
-\keyword{count}
+\keyword{NA}
+\keyword{count,}
+\keyword{missing,}
 \keyword{n,}
