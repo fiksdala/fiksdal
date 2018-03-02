@@ -2,6 +2,7 @@
 
 export(N)
 export(SEM)
+export(addcds)
 export(allexcept)
 export(bylabel.f)
 export(lastnumbers)
