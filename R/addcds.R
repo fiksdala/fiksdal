@@ -12,8 +12,9 @@
 
 addcds <- function(df,influence.object,ID) {
   cds <- cooks.distance(influence.object)
-  cdf <- data.frame(paste0(ID)=rownames(cds),
+  cdf <- data.frame(tempvar=rownames(cds),
                     cd=cds)
+  colnames(cdf)[1] <- ID
   df <- merge(df,cdf,by=ID)
   df
 }

@@ -4,16 +4,18 @@
 \alias{addcds}
 \title{addcds}
 \usage{
-addcds(df, influence.object)
+addcds(df, influence.object, ID)
 }
 \arguments{
 \item{df}{dataframe}
 
 \item{influence.object}{An object returned from influence.ME's influence()}
+
+\item{ID}{ID name of df}
 }
 \description{
 This function returns a dataframe with cook's distance stats obtained through
-influence.ME's influence() function
+influence.ME's influence() function.
 }
 \examples{
 addcds()
