@@ -18,7 +18,7 @@
 varcontain <- function(df, matching='all',
                        except='none', ignorecase=TRUE) {
   x <- ifelse(matching=='all','',matching)
-  y <- ifelse(except=='none',runif(1))
+  y <- ifelse(except=='none',runif(1),except)
   output <- colnames(df)[grepl(x,
                                colnames(df),
                                ignore.case = ignorecase)]
