@@ -4,12 +4,16 @@
 \alias{varcontain}
 \title{varcontain}
 \usage{
-varcontain(df, x, ignorecase = TRUE)
+varcontain(df, matching = "all", except = "none", ignorecase = TRUE)
 }
 \arguments{
 \item{df}{A dataframe}
 
-\item{x}{A string that the returned variables in the dataframe will contain}
+\item{matching}{A string that the returned variables in the dataframe will
+contain}
+
+\item{except}{A string that the returned variables in the dataframe will NOT
+contain}
 
 \item{ignorecase}{Ignore case of the string? Default is TRUE}
 }
