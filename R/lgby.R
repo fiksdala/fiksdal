@@ -12,7 +12,6 @@
 #' order and axis of the grid. grid_var cannot be used independently of
 #' facet_var for obvious reasons.
 #' @param error_bars Include standard error bars?
-#' @param dodge Error bar position_dodge
 #' @param error_bar_width Error bar width
 #' @keywords line graph
 #' @export
@@ -80,8 +79,7 @@ lgby <- function(df, x, y, by, facet_var, grid_var,error_bars=TRUE,
     }
     if(error_bars==TRUE) {
       output <- output +
-        geom_errorbar(aes(ymin=y-se, ymax=y+se), width=error_bar_width,
-                      position=position_dodge(dodge))
+        geom_errorbar(aes(ymin=y-se, ymax=y+se), width=error_bar_width)
     }
     output <- output +
       ylab(y)

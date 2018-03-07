@@ -25,8 +25,6 @@ facet_var for obvious reasons.}
 
 \item{error_bars}{Include standard error bars?}
 
-\item{dodge}{Error bar position_dodge}
-
 \item{error_bar_width}{Error bar width}
 }
 \description{
