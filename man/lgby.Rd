@@ -4,7 +4,8 @@
 \alias{lgby}
 \title{lgby}
 \usage{
-lgby(df, x, y, by, facet_var, grid_var, error_bars = TRUE)
+lgby(df, x, y, by, facet_var, grid_var, error_bars = TRUE, dodge = 1,
+  error_bar_width = 1)
 }
 \arguments{
 \item{df}{A dataframe.}
@@ -23,6 +24,10 @@ order and axis of the grid. grid_var cannot be used independently of
 facet_var for obvious reasons.}
 
 \item{error_bars}{Include standard error bars?}
+
+\item{dodge}{Error bar position_dodge}
+
+\item{error_bar_width}{Error bar width}
 }
 \description{
 This function quickly executes the aggregate and ggplot functions to produce
