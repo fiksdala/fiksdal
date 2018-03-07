@@ -37,7 +37,7 @@ lgby <- function(df, x, y, by, facet_var, grid_var,error_bars=TRUE) {
 
     dfout <- aggregate(dfin$y, bylist, mean)
     ses <- aggregate(dfin$y,bylist,SEM)
-    dfout <- cbind(dfout,ncol(ses))
+    dfout <- cbind(dfout,ses[,ncol(ses)])
     names(dfout) <- c(s.names, 'y','se')
 
     if(missing(by)==TRUE & missing(facet_var)==TRUE & missing(grid_var)==TRUE)
